@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica <code>&lt;picture&gt;&lt;source&gt;</code></h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">        
+        <img src="imagens/foto_g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/gta5_300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/gta5_700.jpg" type="image/jpg">
+        <img src="imagens/gta5_1000.jpg" alt="GTA 5">
+    </picture>
+    <hr>
+    <picture>
+        <source media="(max-width: 850px)" srcset="imagens/Guanabara_400.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Guanabara_800.png" type="image/png">
+        <img src="imagens/Guanabara_1000.png" alt="Imagem flexível">
+    </picture>
+    <hr><hr>
+    <h1>Reproduzindo Áudio </h1>
+    <p>Aprendendo a reproduzir áudios em HTML5.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/metallica_300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/metallica_700.png" type="image/png">
+        <img src="imagens/metallica_1000.png" alt="Metallica">
+    </picture>
+    <audio preload="metadata" controls>
+        <source src="midia/Metallica - One (Studio Version).mp3" type="audio/mpeg">
+        <source src="midia/Metallica - One (Studio Version).ogg" type="audio/ogg">
+        <source src="midia/Metallica - One (Studio Version).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio.
+            <a href="midia/Metallica - One (Studio Version).mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+</body>
+</html>
