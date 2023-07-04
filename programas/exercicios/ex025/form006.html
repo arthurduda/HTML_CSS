@@ -9,23 +9,38 @@
             font-family: monospace;
             font-size: 1.5em;
         }
+
+        legend {
+            font-size: 1.2em;
+        }
+
+        fieldset {
+            border: 2px dashed black;
+        }
     </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <div>
-            <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor" value="#00ff00">
-        </div><br>
-        <div>
-            <label for="inivel">Nível de Satisfação:</label>
-            <input type="range" name="nivel" id="inivel" value="5" min="1" max="5">
-        </div><br>
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </div>
-    </form>
+    <fieldset>
+        <legend>Exemplo</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div><br>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#ff0000">
+            </div><br>
+            <div>
+                <label for="inivel">Nível de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+            </div><br>
+            <div>
+                <label for="ifoto">Foto de perfil: <br></label>
+                <input type="file" name="foto" id="ifoto">
+            </div><br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div><br>
+        </form>
+    </fieldset>
 </body>
 </html>
